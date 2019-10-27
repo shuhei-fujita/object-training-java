@@ -10,4 +10,8 @@ public class Cleric {
         hp = maxHp;
         System.out.println("HPが最大まで回復した！");
     }
+
+    void pray() {
+        
+    }
 }
