@@ -4,5 +4,7 @@ public class Cleric {
     final int maxHp = 50;
     int mp = 10;
     final int maxMp = 10;
+    void selfAid() {
 
+    }
 }
