@@ -1,9 +1,27 @@
 public class Cleric {
-    String name;
+
+    // 静的メンバ，最大値は共通事項なのでここで定義
+    static final int maxHp = 50;
+    static final int maxMp = 10;
 
     // コンストラクタの定義
+    Cleric(String name, int hp, int mp) {
+        this.name = name;
+        this.hp = hp;
+        this.mp = mp;
+    }
+
+    Cleric(String name, int hp) {
+        this(name, hp, Cleric.maxMp);
+    }
+
+    Cleric(String name) {
+        this(name, Cleric.maxHp);
+    }
+
     Cleric() {
         int hp = 50;
+        // finalは定数，上書き不可
         final int maxHp = 50;
         int mp = 10;
         final int maxMp = 10;
