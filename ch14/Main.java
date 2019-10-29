@@ -10,6 +10,8 @@ public class Main {
         c.setTime(now);
 
         int year = c.get(Calendar.YEAR);
-        System.out.println("今年は" + year + "年です");
+        int month = c.get(Calendar.MONTH);
+        int day = c.get(Calendar.DAY_OF_MONTH);
+        System.out.println("今日は" + year + "年" + month + "月" + day + "日です");
     }
 }
