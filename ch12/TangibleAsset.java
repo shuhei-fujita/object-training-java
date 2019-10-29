@@ -9,24 +9,25 @@ public abstract class TangibleAsset extends Asset implements Thing {
         this.color = color;
     }
 
-    /**
-     * @return the name
-     */
     public String getName() {
         return this.name;
     }
 
-    /**
-     * @return the price
-     */
     public int getPrice() {
         return this.price;
     }
 
-    /**
-     * @return the color
-     */
     public String getColor() {
         return this.color;
+    }
+
+    @Override
+    public double getWeight(double weight) {
+        return this.weight;
+    }
+
+    @Override
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 }
