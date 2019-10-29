@@ -1,4 +1,6 @@
 public class PoisonMatango extends Matango {
+    // 毒攻撃の可能な残り回数の初期値を５にセット
+    private int poisonCount = 5;
 
     // コンストラクタ
     public PoisonMatango(char suffix) {
